@@ -15,7 +15,7 @@ class UniLasso:
 
         # We use LassoCV to select the best regularization parameter.
         # We set positive=True to ensure that coefficients are non-negative.
-        self.lasso = LassoCV(positive=True, alphas=100, cv=5, max_iter=10000, tol=1e-4, n_jobs=-1)
+        self.lasso = LassoCV(positive=True, alphas=100, cv=5, max_iter=10000, tol=1e-4, n_jobs=-1, fit_intercept=False)
     
     def fit(self, X, y):
         # Initialize the intercepts, coefficients, and fitted values matrix based on the input shape.
