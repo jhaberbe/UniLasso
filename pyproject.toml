@@ -1,7 +1,13 @@
 [project]
 name = "unilasso"
 version = "0.1.0"
-description = "Add your description here"
+description = "Implementation of the Unilasso algorithm for feature selection in linear regression."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "jupyter>=1.1.1",
+    "pandas>=2.3.0",
+    "scikit-learn>=1.7.0",
+    "seaborn>=0.13.2",
+    "tqdm>=4.67.1",
+]
